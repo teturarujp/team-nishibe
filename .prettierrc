@@ -1,0 +1,6 @@
+{
+  "semi": false, // セミコロンを省略
+  "singleQuote": true, // シングルクォートを使用
+  "trailingComma": "es5", // 末尾のカンマをES5互換で
+  "tabWidth": 2 // インデントは2スペース
+}

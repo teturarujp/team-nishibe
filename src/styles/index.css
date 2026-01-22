@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "azukiL";
+    src: url("/font/azukiL.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    --font-azuki: "azukiL", sans-serif;
+}
+
+.font-azuki {
+    font-family: var(--font-azuki);
+}
