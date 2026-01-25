@@ -32,8 +32,9 @@ root
 │   └── favicon.ico
 ├── src
 │   ├── components - ページで使うパーツ（ヘッダー、フッター）
-│   ├── pages      - ページ本体（App.tsxもここ）
+│   ├── pages      - ページ本体
 │   ├── styles     - css置き場
+│   ├── utils      - ts置き場
 │   └── main.tsx
 └── README.me - 現在地
 

@@ -1,6 +1,7 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
 import { FadeInUp } from '../components/fadein';
+import { publicPath } from '../utils/publicPath';
 
 export default function About_Catfish() {
   return (
@@ -9,7 +10,7 @@ export default function About_Catfish() {
       <main>
         <div className="flex flex-col items-center gap-20 bg-gradient-to-b from-blue-200 to-lime-700 via-teal-200 pb-60">
           <div className="w-full text-center mt-20 py-8 text-4xl font-bold">アメリカナマズ</div>
-          <img className="w-2/5" src="/img/catfish.png" alt="アメリカナマズの画像" />
+          <img className="w-2/5" src={publicPath("img/catfish.png")} alt="アメリカナマズの画像" />
           <div className="w-1/2">
             <div className="flex border-b py-2">
               <div className="w-1/4">名前</div>
@@ -39,7 +40,7 @@ export default function About_Catfish() {
           <div className="w-full text-center mt-20 py-8 text-4xl font-bold">アメリカナマズの料理</div>
           <FadeInUp>
             <div className="flex justify-center gap-10 mt-20 px-10 w-full h-80">
-              <img src="/img/catfish_cooking1.webp" alt="ナマズカレーの画像" />
+              <img src={publicPath("img/catfish_cooking1.webp")} alt="ナマズカレーの画像" />
               <div className="flex flex-col gap-6 w-3/5">
                 <div className="flex items-center w-full h-1/5 text-2xl font-bold">
                   ナマズカレー
@@ -60,12 +61,12 @@ export default function About_Catfish() {
                   濃厚な脂の甘みと甘辛いタレが熱々のご飯に染み渡る、ウナギに負けないスタミナ満点の一杯
                 </div>
               </div>
-              <img src="/img/catfish_cooking2.webp" alt="ナマズカレーの画像" />
+              <img src={publicPath("img/catfish_cooking2.webp")} alt="ナマズカレーの画像" />
             </div>
           </FadeInUp>
           <FadeInUp>
             <div className="flex justify-center gap-10 mt-20 px-10 w-full h-80">
-              <img src="/img/catfish_cooking3.webp" alt="ナマズカレーの画像" />
+              <img src={publicPath("img/catfish_cooking3.webp")} alt="ナマズカレーの画像" />
               <div className="flex flex-col gap-6 w-3/5">
                 <div className="flex items-center w-full h-1/5 text-2xl font-bold">
                   ナマズのフライ

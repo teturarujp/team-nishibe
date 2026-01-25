@@ -2,6 +2,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import { FadeIn, FadeInUp } from '../components/fadein';
 import { Link } from 'react-router-dom';
+import { publicPath } from '../utils/publicPath';
 
 export default function Top() {
   return (
@@ -23,7 +24,7 @@ export default function Top() {
           <FadeInUp>
             <div className="flex justify-center gap-10 mt-20 px-10 w-full h-80">
               <Link to="/about/catfish" className="w-2/5">
-                <img src="./img/catfish.png" alt="アメリカナマズの画像" />
+                <img src={publicPath("./img/catfish.png")} alt="アメリカナマズの画像" />
               </Link>
               <div className="flex flex-col gap-6 w-3/5">
                 <div className="flex items-center w-full h-1/5 text-2xl font-bold">
@@ -46,14 +47,14 @@ export default function Top() {
                 </div>
               </div>
               <Link to="/about/eel" className="w-2/5">
-                <img src="./img/eel.png" alt="ヤツメウナギの画像" />
+                <img src={publicPath("img/eel.png")} alt="ヤツメウナギの画像" />
               </Link>
             </div>
           </FadeInUp>
           <FadeInUp>
             <div className="flex justify-center gap-10 mt-32 px-10 w-full h-80">
               <Link to="/about/turtle" className='w-2/5'>
-                <img src="./img/turtle.png" alt="ミシシッピアカミミガメの画像" />
+                <img src={publicPath("img/turtle.png")} alt="ミシシッピアカミミガメの画像" />
               </Link>
               <div className="flex flex-col gap-6 w-3/5">
                 <div className="flex items-center w-full h-1/5 text-2xl font-bold">
@@ -76,7 +77,7 @@ export default function Top() {
                 </div>
               </div>
               <Link to="/about/frog" className="w-1/2">
-                <img className="h-auto object-cover" src="./img/frog.png" alt="ウシガエルの画像" />
+                <img src={publicPath("img/frog.png")} alt="ウシガエルの画像" />
               </Link>
             </div>
           </FadeInUp>

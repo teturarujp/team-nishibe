@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { publicPath } from '../utils/publicPath';
 
 export const Loading = () => {
   return (
@@ -13,7 +14,7 @@ export const Loading = () => {
         animate={{ rotate: 360 }}
         transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
       >
-        <img src="/img/icon.png" alt="" className="w-[90px] h-[90px]" />
+        <img src={publicPath("img/icon.png")} alt="" className="w-[90px] h-[90px]" />
       </motion.div>
     </motion.div>
   );

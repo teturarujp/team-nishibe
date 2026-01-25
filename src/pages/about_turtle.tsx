@@ -1,6 +1,7 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
 import { FadeInUp } from '../components/fadein';
+import { publicPath } from '../utils/publicPath';
 
 export default function About_Turtle() {
   return (
@@ -9,7 +10,7 @@ export default function About_Turtle() {
       <main>
         <div className="flex flex-col items-center gap-20 bg-gradient-to-b from-blue-200 to-lime-700 via-teal-200 pb-60">
           <div className="w-full text-center mt-20 py-8 text-4xl font-bold">ミシシッピアカミミガメ</div>
-          <img className="w-2/5" src="/img/turtle.png" alt="ミシシッピアカミミガメの画像" />
+          <img className="w-2/5" src={publicPath("img/turtle.png")} alt="ミシシッピアカミミガメの画像" />
           <div className="w-1/2">
             <div className="flex border-b py-2">
               <div className="w-1/4">名前</div>
@@ -40,7 +41,7 @@ export default function About_Turtle() {
           <div className="w-full text-center mt-20 py-8 text-4xl font-bold">ミシシッピアカミミガメの料理</div>
           <FadeInUp>
             <div className="flex justify-center gap-10 mt-20 px-10 w-full h-80">
-              <img src="/img/turtle_cooking1.webp" alt="ナマズカレーの画像" />
+              <img src={publicPath("img/turtle_cooking1.webp")} alt="ナマズカレーの画像" />
               <div className="flex flex-col gap-6 w-3/5">
                 <div className="flex items-center w-full h-1/5 text-2xl font-bold">
                   アカミミガメの炊き込みご飯
@@ -61,12 +62,12 @@ export default function About_Turtle() {
                   鶏肉よりもきめ細やかな繊維質と、とろける皮の食感のコントラストはカメ料理の真骨頂
                 </div>
               </div>
-              <img src="/img/turtle_cooking2.webp" alt="ナマズカレーの画像" />
+              <img src={publicPath("img/turtle_cooking2.webp")} alt="ナマズカレーの画像" />
             </div>
           </FadeInUp>
           <FadeInUp>
             <div className="flex justify-center gap-10 mt-20 px-10 w-full h-80">
-              <img src="/img/turtle_cooking3.webp" alt="ナマズカレーの画像" />
+              <img src={publicPath("img/turtle_cooking3.webp")} alt="ナマズカレーの画像" />
               <div className="flex flex-col gap-6 w-3/5">
                 <div className="flex items-center w-full h-1/5 text-2xl font-bold">
                   アカミミガメの唐揚げ

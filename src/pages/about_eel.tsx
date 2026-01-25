@@ -1,5 +1,6 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
+import { publicPath } from '../utils/publicPath';
 
 export default function About_Eel() {
   return (
@@ -8,7 +9,7 @@ export default function About_Eel() {
       <main>
         <div className="flex flex-col items-center gap-20 bg-gradient-to-b from-blue-200 to-lime-700 via-teal-200 pb-60">
           <div className="w-full text-center mt-20 py-8 text-4xl font-bold">ヤツメウナギ</div>
-          <img className="w-2/5" src="/img/eel.png" alt="ヤツメウナギの画像" />
+          <img className="w-2/5" src={publicPath("img/eel.png")} alt="ヤツメウナギの画像" />
           <div className="w-1/2">
             <div className="flex border-b py-2">
               <div className="w-1/4">名前</div>

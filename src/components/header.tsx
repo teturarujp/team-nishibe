@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import { HeaderMenu } from './header_about';
+import { publicPath } from '../utils/publicPath';
 
 export default function Header() {
   return (
     <header className="items-center justify-between flex fixed w-full h-20 top-0 bg-blue-100 z-10">
       <div className="absolute left-10 flex items-center">
-        <img src="/img/icon.png" alt="" className="w-[90px] h-[90px]" />
+        <img src={publicPath("./img/icon.png")} alt="" className="w-[90px] h-[90px]" />
         <div className="flex-col">
           <p className="text-xl font-azuki font-bold pl-4">江別で沼釣り</p>
           <p className="text-xl font-azuki font-bold pl-14">してみませんか？</p>

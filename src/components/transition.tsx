@@ -10,7 +10,7 @@ export const Transition = ({ children }: { children: React.ReactNode }) => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (location.pathname !== displayLocation.pathname) {
+    if (location.key !== displayLocation.key) {
       setLoading(true);
 
       const timer = setTimeout(() => {
