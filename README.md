@@ -9,6 +9,7 @@
 ページは以下のURLかコマンドで見ることができます。
 
 ## URL
+https://teturarujp.github.io/team-nishibe/
 
 ## コマンド
 ※ 事前にNode.jsをインストールする必要あり
