@@ -1,7 +1,7 @@
 # はじめに
 チーム西部 「江別で沼釣り」サイトの開発ファルダです。
 
-提出するにあたりdist(ビルドデータ)フォルダとnode_modulesフォルダを削除しています。
+提出するにあたりnode_modulesフォルダを削除しています。
 
 <br>
 
@@ -27,6 +27,7 @@ https://teturarujp.github.io/team-nishibe/
 ```
 
 root
+├── docs - ビルドデータ
 ├── public
 │   ├── font - ttfファイル置き場
 │   ├── img  - ページで使う画像置き場
